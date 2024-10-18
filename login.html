@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            background-image: url('walk.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        .login{
+            height: 400px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px   rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-image: url(bg1.jpg) ; */
+            background-color: transparent;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .in1{
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius:4px ;
+        }
+
+        h2{
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login_btn{
+            width: 100%;
+            background-color: #28a745;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .message {
+            margin-top: 15px;
+            color: white;
+            text-align: center;
+        }
+        .message a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+         button {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+         button{
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+         button:hover {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action="/login" method="POST">
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Enter Email" class="in1" required><br>
+            <input type="password" name="password" placeholder="Enter password" class="in1" required><br>
+            <button type="submit">Login</button>
+            <p class="message">Sign in <a href="register.html" id="showLogin">Register</a></p>
+        </form>
+
+    </div>
+</body>
+</html>
+
+
+

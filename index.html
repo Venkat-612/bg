@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASS-5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-image: url('Walking.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 100vh; */
+        }
+
+        header {
+            width: 100%;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .buttons {
+            display: flex;
+            /* justify-content: flex-end; */
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d3d3d3;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .buttons a{
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #d3d3d3;
+        }
+    </style>
+    <link rel="stylesheet" href="main1.css">
+</head>
+
+<body>
+    <header>
+        <h2>TRYING FOR THE FIRST TIME</h2>
+        <div class="buttons">
+            <!-- <button onclick="window.location.href='login.html'" type="button">Login</button>
+            <button onclick="window.location.href='register.html'" type="button">Register</button> -->
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+    </header>
+</body>
+
+</html>
